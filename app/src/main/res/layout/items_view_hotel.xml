@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="5dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/logo_nodejs"
+                android:id="@+id/img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/name"
+                android:text="Khách sạn"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:textSize="20sp"
+                android:layout_toRightOf="@id/img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"/>
+
+            <TextView
+                android:text="Thành phố"
+                android:textSize="11sp"
+                android:id="@+id/city"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:layout_below="@id/name"
+                android:layout_toRightOf="@id/img"/>
+
+            <TextView
+                android:text="Địa chỉ"
+                android:textColor="#ff23"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="11sp"
+                android:layout_toRightOf="@id/img"
+                android:layout_below="@id/city"
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="#ff23"
+                android:text="Số đăng đí"
+                android:textSize="11sp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/license_number"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address"
+                android:layout_toRightOf="@id/img"/>
+
+            <TextView
+                android:textColor="#ff23"
+                android:text="Tổng số tầng"
+                android:textSize="11sp"
+
+                android:id="@+id/total_floor"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/license_number"
+                android:layout_toRightOf="@id/img"/>
+
+            <TextView
+                android:textColor="#ff23"
+                android:text="Chủ sở hữu"
+                android:textSize="11sp"
+                android:id="@+id/owner"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/total_floor"
+                android:layout_toRightOf="@id/img"/>
+
+
+
+            <ImageButton
+                android:id="@+id/btndelete"
+                android:layout_marginRight="5dp"
+                android:layout_below="@id/name"
+                android:layout_alignParentRight="true"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_delete"/>
+
+
+            <ImageButton
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/btndelete"
+                android:id="@+id/btnedit"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_edit"/>
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
